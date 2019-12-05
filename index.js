@@ -13,12 +13,12 @@ app.use(bodyparser.urlencoded({extended: false}));
 app.use('/businesses', businesses);
 
 app.get('/', function (req, res) {
-    res.send('Hello World')
+    res.send('Reviews SVC Backend')
 })
 
 
 app.listen(port, function () {
-    console.log(' listening on port', port);
+    console.log('listening on port', port);
 });
 
 module.exports = app;
