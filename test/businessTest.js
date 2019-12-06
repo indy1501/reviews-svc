@@ -19,7 +19,7 @@ it('Check add reviews is working', function(done) {
 });
 
 it('Check delete reviews is working', function(done) {
-    axios.post("https://reviewsvc.codeninjas.cf/businesses/2e0899da-b712-4fc2-a8c0-5b840ba8fd70/reviews/cea21094-f094-4e87-ae91-9842ea596f88")
+    axios.delete("https://reviewsvc.codeninjas.cf/businesses/2e0899da-b712-4fc2-a8c0-5b840ba8fd70/reviews/26cc576a-f748-41a2-92cf-8dba80a22050")
         .then((res) => {
             expect(res.status).to.equal(200);
             done();
@@ -30,16 +30,5 @@ it('Check delete reviews is working', function(done) {
         })
 });
 
-it('Check delete reviews is working', function(done) {
-    axios.post("https://reviewsvc.codeninjas.cf/businesses/c94a726c-f9d4-4602-8836-ba7248366fce/reviews/cea21094-f094-4e87-ae91-9842ea596f88")
-        .then((res) => {
-            expect(res.status).to.equal(200);
-            done();
-        })
-        .catch((error) => {
-            console.error(error)
-            done();
-        })
-});
 
 
